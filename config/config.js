@@ -1,14 +1,11 @@
-// kita ubah .json menjadi js karena kita perlu ambil data dari env
 require('dotenv').config();
-
-const {
+const{
   DB_USERNAME,
   DB_PASSWORD,
   DB_NAME,
   DB_HOSTNAME
 } = process.env;
-
-module.exports = {
+module.exports={
   "development": {
     "username": DB_USERNAME,
     "password": DB_PASSWORD,
